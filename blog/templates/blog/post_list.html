@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    
+    
+ <title>Chris by Design</title>   
+</head>
+
+<body>
+<h1>Hello world</h1>
+
+{% for post in posts %}
+ <section>
+    <h1><a href='#'>{{ post.title }}</a></h1>
+    <p>Published: {{ post.published_date }}</p><br>
+    <p>{{ post.text|linebreaksbr }}</p>
+ </section>
+{% endfor %}
+</body>
+
+
+</html>
